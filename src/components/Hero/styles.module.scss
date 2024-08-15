@@ -1,0 +1,264 @@
+
+
+.container {
+    
+    width: 100%;
+    padding-right: calc(1.875rem * 0.5);
+    padding-left: calc(1.875rem * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 2rem);
+    margin-right: calc(-0.5 * 2rem);
+    margin-left: calc(-0.5 * 2rem);
+    padding: 0 2rem;
+    
+}
+
+.row1 {
+    max-width: 100%;
+    padding-right: calc(2rem * 0.5);
+    padding-left: calc(2rem * 0.5);
+    margin-top: 2rem;
+
+    
+}
+
+
+.card {
+    height: 560px;
+    overflow: hidden;
+    z-index: 99;
+    will-change: transform;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    color: rgb(89 93 105);
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 0 solid #0000001a;
+    border-radius: 0.7rem;
+
+    ::before {
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        -webkit-transition: all 1s !important;
+        transition: all 1s !important;
+        z-index: -2;
+    }
+}
+
+.overlay {
+    z-index: 2;
+    padding: 1rem;
+    display: flex ;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0.7rem;
+}
+
+
+
+
+.heading1 {
+    font-size: calc(1.359375rem + 1.3125vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+
+.btn_link {
+    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-size: 0px 6%;
+    background-repeat: no-repeat;
+    background-position: left 100%;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    font-weight: inherit;
+    padding: 0;
+
+    ::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+        box-sizing: border-box;
+    }
+}
+
+.para {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+
+
+
+
+.smol_card2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(2rem * 0.5);
+    padding-left: calc(2rem * 0.5);
+    margin-top: 2rem;
+}
+
+
+
+.right_card {
+    height: calc(280px - 2rem / 2);
+    overflow: hidden;
+    z-index: 99;
+    will-change: transform;
+    position: relative;
+    display: flex;
+    --webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    color: #595d69;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 0 solid #0000001a;
+    border-radius: 0.7rem;
+
+    ::before {
+        content: "";
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        box-sizing: border-box;
+    }   
+
+    ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        transition: all 1s !important;
+        z-index: -2;
+    }
+}
+
+
+
+.heading4 {
+    font-size: calc(1.265625rem + 0.1875vw);
+    color: white;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+@media (min-width: 992px) {
+    .container {
+       max-width: 94%;
+   }
+}
+
+
+@media (min-width: 992px) {
+    .smol_card {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .row1 {
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .smol_card_md {
+        -webkit-box-flex: 0;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+
+
+@media (min-width: 576px) {
+    .overlay {
+        padding: 2rem !important;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .row1 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
