@@ -59,9 +59,12 @@ const CustomMobileLink: React.FC<CustomMobileLinkProps> = ({ href, title, classN
         group-hover:w-full transition-[width] ease duration-300
         ${pathname === href ? 'w-full' : 'w-0'} dark:bg-dark
         `}
+        
       >
         &nbsp;
+        
       </span>
+      
     </button>
   );
 };
@@ -77,32 +80,30 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
-      <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? 'opacity-0' : 'opacity-100'
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
-          }`}
-        ></span>
-      </button>
+    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 bg-transparent'>
+      
+      
 
       <div className='w-full flex justify-between items-center lg:hidden text-dark dark:text-light '>
+         
+      <div className="flex  items-center justify-center ">
+  <div className="group relative flex h-14 w-52 cursor-pointer items-center justify-center gap-4 rounded-full border-2 border-solid border-black">
+    <div className="absolute left-5 z-0 h-3 w-3 rounded-full bg-blue-400 transition-all duration-300 ease-in-out group-hover:left-0 group-hover:h-full group-hover:w-full"></div>
+    <p className="absolute right-5 z-10 font-bold uppercase transition-all duration-300 ease-in-out group-hover:right-8 group-hover:text-white">Sign In / Sign up</p>
+  </div>
+</div>
+
         <nav>
           <CustomLink href='/' title='Home' className='mr-4 ' router={useRouter()} />
           <CustomLink href='/about' title='About' className='mx-4' router={useRouter()} />
           <CustomLink href='/blog' title='Blogs' className='mx-4' router={useRouter()} />
           <CustomLink href='/contact' title='Contact' className='ml-4' router={useRouter()} />
         </nav>
+
+
+
+       
+
         
 
           <button
@@ -112,9 +113,12 @@ const Navbar = () => {
             }`}
           >
             {mode === 'dark' ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />}
+            
           </button>
+          
         
       </div>
+      
 
       {isOpen ? (
         <motion.div
@@ -122,6 +126,7 @@ const Navbar = () => {
           animate={{ scale: 1, opacity: 1 }}
           className='min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'
         >
+          
           <nav className='flex items-center flex-col justify-center'>
             <CustomMobileLink href='/' title='Home' className='' toggle={handleClick} router={useRouter()} />
             <CustomMobileLink href='/about' title='About' className='' toggle={handleClick} router={useRouter()} />

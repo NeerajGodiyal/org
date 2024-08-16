@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20vw;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    padding: 0 10vw;
+    color: gray;
+  }
+  
+  .body{
+    font-size: 2vw;
+  }
+  
+  .lineMask{
+    overflow: hidden;
+  }
+  
+  .lineMask p{
+    margin: 0px;
+    font-weight: 700;
+  }
