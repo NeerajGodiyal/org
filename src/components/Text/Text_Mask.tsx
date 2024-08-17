@@ -14,6 +14,14 @@ const phrases: string[] = [
 
 ];
 
+const phrases1: string[] = [
+  `Pubg Pc tournamet  event of prize pool $1k
+  Team of 4 players can participate in the tournament
+
+  `,
+
+];
+
 const animation = {
   initial: { y: "100%" },
   enter: (i: number) => ({
@@ -49,6 +57,50 @@ const MaskText: React.FC = () => {
     </div>
   );
 };
+
+
+
+export const MaskText1: React.FC = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+    triggerOnce: true,
+  });
+
+  return (
+    <div ref={ref} className={styles.body}>
+      {phrases1.map((phrase, index) => (
+        <div key={index} className={styles.lineMask}>
+          <motion.p
+            custom={index}
+            variants={animation}
+            initial="initial"
+            animate={inView ? "enter" : ""}
+          >
+            {phrase}
+          </motion.p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Text_Mask: React.FC = () => {
   return (

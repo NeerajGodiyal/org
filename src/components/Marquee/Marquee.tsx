@@ -30,7 +30,7 @@ export default function Marquee() {
         <Slide src={Picture1} direction="left" left="-40%" progress={scrollYProgress} />
         <Slide src={Picture2} direction="right" left="-25%" progress={scrollYProgress} />
       </div>
-      <div className="h-[100vh]" />
+      <div className="h-[25vh]" />
     </main>
   );
 }
