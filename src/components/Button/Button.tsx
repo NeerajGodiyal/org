@@ -13,7 +13,7 @@ function Button({text, border, borderCol, bg, txt}:
   return (
     <div className={`w-fit px-[6vw] py-[3vw] xs:px-[1vw] xs:py-[.3vw] ${bg} ${border} ${borderCol}
       rounded-full flex items-center gap-[.5vw] justify-center cursor-pointer`}>
-      <div className={`h-[4vw] xs:h-[1.5vw] ctaWrapper overflow-hidden  ${txt}`}>
+      <div className={`h-[4vw] xs:h-[1.5vw]  overflow-hidden  ${txt}`}>
         <h5 className='text-[3.5vw] leading-[4vw] xs:text-[.8vw] xs:leading-[1.4vw]'>{text}</h5>
         <h5 className='text-[3.5vw] leading-[4vw] xs:text-[.8vw] xs:leading-[1.4vw]'>{text}</h5>
       </div>
