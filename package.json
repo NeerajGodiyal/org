@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@studio-freight/react-lenis": "^0.0.47",
     "framer-motion": "^11.3.27",
     "gsap": "^3.12.5",

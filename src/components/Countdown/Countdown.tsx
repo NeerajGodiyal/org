@@ -29,12 +29,12 @@ export default function Countdown() {
     const seconds = count % 60;
 
     return (
-        <div className="min-h-screen flex flex-col bg-black">
-            <div className="flex-grow flex flex-col items-center justify-center gap-24">
-                <h2 className="font-red_hat text-center px-4 text-white font-bold text-xl tracking-[0.45rem]">
+        <div className="min-h-screen flex flex-col bg-white dark:bg-black">
+            <div className="flex-grow flex flex-col items-center justify-center gap-24 ">
+                <h2 className="font-red_hat text-center px-4  font-bold text-xl tracking-[0.45rem] text-black dark:text-light">
                     WE'RE LAUNCHING SOON
                 </h2>
-                <div className="grid grid-cols-4 lg:gap-8 gap-4">
+                <div className="grid grid-cols-2 lg:gap-8 gap-4 xs:grid-cols-4">
                     <div className="font-red_hat font-bold lg:w-36 w-[10vw] items-center gap-4 flex flex-col">
                         <DigitDisplay prev={days + 1} next={days} />
                         <span className="font-red_hat text-c_grayish_blue tracking-[0.25rem] lg:scale-100 scale-75 text-xs">

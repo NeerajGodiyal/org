@@ -1,7 +1,7 @@
 export default function DigitDisplay(props: { prev: number; next: number }) {
     const { prev, next } = props;
     return (
-        <div className="w-full aspect-square relative text-[min(5rem,10vw)]">
+        <div className="w-full aspect-square relative text-[min(5rem,10vw)] ">
             <div className="rounded-xl absolute aspect-[2/1] w-full bg-c_dark_desaturated_blue brightness-75 text-[c_soft_red] overflow-hidden">
                 <div
                     key={`up to ${next}`}

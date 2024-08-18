@@ -5,9 +5,12 @@ import Marquee from '@/components/Marquee/Marquee'
 import Video from '@/components/Landing/Video'
 import Text_Mask from '@/components/Text/Text_Mask'
 import Line from '@/components/Line/Line'
-import AliceCarousel from '@/components/Carousel/Carousel'
 import Cards from '@/components/Card/Cards'
 import Countdown from '@/components/Countdown/Countdown'
+
+import CardGrid from '@/components/CardGrid/CardGrid'
+import Slide from '@/components/Slide/Slide'
+import Footer from '@/components/Footer/Footer1'
 
 
 
@@ -16,16 +19,19 @@ import Countdown from '@/components/Countdown/Countdown'
 
 const index = () => {
   return (
-    <main className=''> 
+    <main className='min-h-screen w-full '> 
       <Header />
+      
       <Video />
       <Text_Mask />
       <Line />
       <Countdown />
-      <Hero />
-      <Marquee />
       <Cards />
-      <AliceCarousel />
+      {/* <Hero /> */}
+      <Marquee />
+      <CardGrid />
+      <Slide />
+      <Footer />
       
 
     </main>
