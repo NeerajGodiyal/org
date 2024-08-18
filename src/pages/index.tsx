@@ -7,10 +7,10 @@ import Text_Mask from '@/components/Text/Text_Mask'
 import Line from '@/components/Line/Line'
 import Cards from '@/components/Card/Cards'
 import Countdown from '@/components/Countdown/Countdown'
-
 import CardGrid from '@/components/CardGrid/CardGrid'
 import Slide from '@/components/Slide/Slide'
 import Footer from '@/components/Footer/Footer1'
+import Head from 'next/head'
 
 
 
@@ -19,6 +19,14 @@ import Footer from '@/components/Footer/Footer1'
 
 const index = () => {
   return (
+    <>
+    <Head>
+        <title>Gaming Community Website</title>
+        <meta
+          name="description"
+          content="Welcome to our Gaming Community"
+        />
+      </Head>
     <main className='min-h-screen w-full '> 
       <Header />
       
@@ -35,6 +43,7 @@ const index = () => {
       
 
     </main>
+    </>
   )
 }
 
