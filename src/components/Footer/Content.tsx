@@ -5,7 +5,7 @@ import { BiLogoPinterestAlt } from "react-icons/bi";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-purple-600 font-sans dark:bg-gray-900 text-white py-12 h-full">
+    <footer className="bg-gradient-to-r from-blue-600 to-purple-600 font-sans dark:bg-gray-900 text-white py-32 h-full">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 lg:space-y-0">
 
