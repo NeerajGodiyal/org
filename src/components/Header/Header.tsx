@@ -80,11 +80,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-2  bg-transparent'>
+    <header className='w-full px-32 py-4 font-medium sm:hidden  flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-2  bg-transparent'>
       
       
 
-      <div className='w-full flex justify-between items-center lg:hidden  text-dark dark:text-light '>
+      <div className='w-full flex justify-between items-center  text-dark dark:text-light '>
          
       <div className="flex  items-center justify-center sm:hidden">
   <div className="group relative flex h-14 w-52 cursor-pointer items-center justify-center gap-4 rounded-full border-2 border-solid border-black">
