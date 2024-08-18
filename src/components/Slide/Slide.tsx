@@ -40,7 +40,7 @@ const Slide: React.FC = () => {
         <>
             <Text_Opacity1 />
         <div className="relative flex h-[60vh] my-10 w-full">
-            <div className="w-full relative  overflow-x-hidden dark:text-white text-black">
+            <div className="w-full relative  overflow-hidden dark:text-white text-black">
             <LineAnimation />
                 <Splide options={options} extensions={{ AutoScroll }}>
                     <SplideSlide>
