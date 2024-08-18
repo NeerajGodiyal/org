@@ -80,7 +80,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-4  bg-transparent'>
+    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-2  bg-transparent'>
       
       
 
