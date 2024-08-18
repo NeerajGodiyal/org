@@ -80,13 +80,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 bg-transparent'>
+    <header className='w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-4  bg-transparent'>
       
       
 
-      <div className='w-full flex justify-between items-center md:hidden text-dark dark:text-light '>
+      <div className='w-full flex justify-between items-center  text-dark dark:text-light '>
          
-      <div className="flex  items-center justify-center ">
+      <div className="flex  items-center justify-center sm:hidden">
   <div className="group relative flex h-14 w-52 cursor-pointer items-center justify-center gap-4 rounded-full border-2 border-solid border-black">
     <div className="absolute left-5 z-0 h-3 w-3 rounded-full bg-blue-400 transition-all duration-300 ease-in-out group-hover:left-0 group-hover:h-full group-hover:w-full"></div>
     <p className="absolute right-5 z-10 font-bold uppercase transition-all duration-300 ease-in-out group-hover:right-8 group-hover:text-white">Sign In / Sign up</p>

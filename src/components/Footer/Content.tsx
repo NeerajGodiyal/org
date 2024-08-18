@@ -7,11 +7,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-purple-600 font-sans dark:bg-gray-900 text-white py-32 h-full">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row justify-between items-start space-y-10 lg:space-y-0">
+        <div className="flex flex-col  justify-between items-start space-y-10 lg:space-y-2">
 
           {/* Newsletter Subscription Section */}
-          <div className="lg:w-1/3 w-full">
-            <h1 className="text-xl lg:text-2xl font-semibold mb-4">Subscribe to our newsletter to get updates.</h1>
+          <div className="lg:w-1/3 w-full sm:w-full">
+            <h1 className="text-xl lg:text-2xl font-semibold mb-4 ">Subscribe to our newsletter to get updates.</h1>
             <div className="flex flex-col lg:flex-row items-center lg:space-x-4 space-y-3 lg:space-y-0">
               <input
                 id="email"
@@ -26,20 +26,29 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Links Section */}
-          <div className="flex flex-col lg:flex-row lg:w-2/3 w-full lg:space-x-16 space-y-10 lg:space-y-0">
+          <div className="flex flex-col lg:flex-row lg:w-2/3 w-full lg:space-x-16 space-y-20 lg:space-y-0 sm:flex">
             <div className="flex-1 space-y-5">
               <p className="text-lg font-semibold">Quick Links</p>
+
+              
               <div className="space-y-2">
                 <p className="text-white/80 hover:text-white hover:underline cursor-pointer">Home</p>
                 <p className="text-white/80 hover:text-white hover:underline cursor-pointer">Who We Are</p>
                 <p className="text-white/80 hover:text-white hover:underline cursor-pointer">Our Events</p>
+
               </div>
+              
             </div>
-            
+
+
           </div>
         </div>
 
         <hr className="my-10 border-white/50" />
+
+
+
+
 
         {/* Footer Bottom Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between">
