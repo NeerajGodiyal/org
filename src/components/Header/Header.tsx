@@ -84,7 +84,7 @@ const Navbar = () => {
       
       
 
-      <div className='w-full flex justify-between items-center  text-dark dark:text-light '>
+      <div className='w-full flex justify-between items-center lg:hidden  text-dark dark:text-light '>
          
       <div className="flex  items-center justify-center sm:hidden">
   <div className="group relative flex h-14 w-52 cursor-pointer items-center justify-center gap-4 rounded-full border-2 border-solid border-black">
